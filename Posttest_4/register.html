@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Toko Buah Segar</title>
+    <style>
+        /* Styling yang mirip dengan halaman login */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #004d00; /* Warna latar belakang hijau */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #006600; /* Latar belakang hijau */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #ccffcc; /* Warna teks hijau muda */
+            text-align: center;
+        }
+
+        label, input, button, p, a {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #ccffcc; /* Warna teks label hijau muda */
+            font-weight: bold;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid #004d00; /* Garis batas hijau gelap */
+            border-radius: 5px;
+            background-color: #003300; /* Latar belakang input hijau gelap */
+            color: white;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #004d00; /* Warna tombol hijau gelap */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        p, a {
+            color: #99cc99; /* Warna teks paragraf dan link hijau muda */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="register.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+
+            <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        </form>
+    </div>
+</body>
+</html>
