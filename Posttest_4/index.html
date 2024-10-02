@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buah Segar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="light-mode">
+    <header>
+        <div class="logo">Toko Buah Segar</div>
+        <nav class="navbar">
+            <ul id="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="Aboutme.html">Tentang Saya</a></li>
+                <li><button id="mode-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <main>
+        <section id="home" class="content">
+            <section class="home" id="home" style="text-align: center;">
+                <h2>Selamat Datang di Toko Buah Sehat</h2>
+                <p>Toko Buah Sehat adalah tempat terbaik untuk mendapatkan buah-buahan segar, alami, dan berkualitas
+                    tinggi. Kami menyediakan berbagai macam buah lokal maupun impor yang siap menemani keseharian Anda
+                    dengan kesegaran alami yang menyehatkan. Setiap buah yang kami pilih melewati proses seleksi yang
+                    ketat untuk memastikan kepuasan dan kualitas terbaik untuk pelanggan.</p>
+            </section>            
+
+            <!-- Kategori Produk -->
+            <section class="categories">
+                <h2>Kategori Produk Kami</h2>
+                <div class="category">
+                    <!-- Buah Segar -->
+                    <a href="buahSegar.html" class="category-item">
+                        <h3>Buah Segar</h3>
+                        <img src="buah segar.jpg" alt="Buah Segar">
+                        <p>Kami menyediakan berbagai buah-buahan segar yang dipetik langsung dari kebun terbaik.</p>
+                    </a>
+
+                    <!-- Jus Segar -->
+                    <a href="jusSegar.html" class="category-item">
+                        <h3>Jus Segar</h3>
+                        <img src="jus segar.jpg" alt="Jus Segar">
+                        <p>Nikmati jus segar dari buah pilihan, tanpa bahan pengawet dan penuh nutrisi.</p>
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Detail Produk Pop-up -->
+            <div id="productDetailPopup" class="popup-overlay">
+                <div class="popup-content">
+                    <h2 id="productTitle">Detail Produk</h2>
+                    <p id="productDescription">Deskripsi lengkap produk akan muncul di sini.</p>
+                    <button class="close-popup" id="closeProductPopup">Tutup</button>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Buah Segar. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3>Diskon Spesial untuk Anda!</h3>
+            <p>Dapatkan diskon 10% untuk pembelian pertama Anda.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

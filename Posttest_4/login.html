@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toko Buah Segar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #004d00; /* Warna latar belakang hijau */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #ccffcc; /* Warna teks hijau muda */
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .login-container {
+            background-color: #006600; /* Latar belakang hijau */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #ccffcc; /* Warna teks label hijau muda */
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #004d00; /* Garis batas hijau gelap */
+            border-radius: 5px;
+            background-color: #003300; /* Latar belakang input hijau gelap */
+            color: white;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            border-color: #66ff66; /* Warna batas saat input difokuskan */
+            outline: none;
+            box-shadow: 0 0 5px rgba(102, 255, 102, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #004d00; /* Warna tombol hijau gelap */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #66ff66; /* Ubah warna saat hover ke hijau terang */
+            transform: translateY(-2px);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            color: #99cc99; /* Warna teks paragraf hijau muda */
+        }
+
+        a {
+            color: #66ff66; /* Warna link hijau terang */
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ccffcc; /* Warna link saat hover ke hijau sangat muda */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+            <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+        </form>
+    </div>
+</body>
+</html>
