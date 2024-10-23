@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Toko Buah Segar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #004d00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #006600;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #ccffcc;
+            text-align: center;
+        }
+
+        label, input, button, p, a {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #ccffcc;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid #004d00;
+            border-radius: 5px;
+            background-color: #003300;
+            color: white;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #004d00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        p, a {
+            color: #99cc99;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="register.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+
+            <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        </form>
+    </div>
+</body>
+</html>
